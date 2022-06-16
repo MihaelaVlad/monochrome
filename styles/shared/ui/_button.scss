@@ -1,0 +1,14 @@
+.category-cta {
+  padding: 14px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  border: 1px solid $brand-primary;
+  background-color: $transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $brand-primary;
+    color: $white;
+  }
+}
