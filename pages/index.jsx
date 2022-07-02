@@ -1,4 +1,9 @@
 import Head from 'next/head';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import BannerMain from '../components/homepage/BannerMain';
+import BrandMarketing from '../components/homepage/BrandMarketing';
+import CatalogPreview from '../components/homepage/CatalogPreview';
 
 export default function Home() {
   return (
@@ -7,19 +12,23 @@ export default function Home() {
         <title>Monochrome</title>
       </Head>
 
-      <header className="header mt-5 ms-5">
-        <h1>Monochrome</h1>
-      </header>
+      <Header></Header>
 
-      <main className="content mt-5 ms-5">
-        <i className="fa-brands fa-youtube-square me-5"></i>
+      <main className="content">
+        <BannerMain></BannerMain>
 
-        <button className="category-cta" title="View all">
-          View all
-        </button>
+        <CatalogPreview></CatalogPreview>
+
+        <CatalogPreview></CatalogPreview>
+
+        <BrandMarketing></BrandMarketing>
+
+        <CatalogPreview></CatalogPreview>
+
+        <CatalogPreview></CatalogPreview>
       </main>
 
-      <footer className="footer"></footer>
+      <Footer></Footer>
     </div>
   );
 }

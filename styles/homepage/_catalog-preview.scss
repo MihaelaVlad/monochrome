@@ -1,0 +1,36 @@
+.catalog-preview {
+  &-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 32px;
+    border-top: 1px solid $brand-tertiary;
+  }
+
+  &-header {
+    h1 {
+      padding: 15px 0;
+      margin: 0;
+      font-size: 32px;
+      font-weight: bold;
+
+      @include media-breakpoint-up('lg') {
+        font-size: 38px;
+      }
+    }
+  }
+
+  .product-tiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+
+    @include media-breakpoint-up('lg') {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 24px;
+    }
+  }
+}

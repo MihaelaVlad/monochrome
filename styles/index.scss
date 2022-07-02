@@ -15,12 +15,21 @@
 // shared
 @import './shared/index';
 
+// homepage
+@import './homepage/index';
+
+// catalog
+@import './catalog/index';
+
+// reset
+@import './reset';
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair', serif;
   color: $brand-primary;
   font-size: 16px;
 }
@@ -28,6 +37,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: $brand-primary;
+  }
 }
 
 h1 {
