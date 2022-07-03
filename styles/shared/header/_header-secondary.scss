@@ -1,6 +1,6 @@
 .header-secondary {
   background-color: $white;
-  padding-bottom: 16px;
+  padding: 16px 0;
 
   @include media-breakpoint-up('lg') {
     background: url('./../../../public/images/banner.png') no-repeat center
@@ -51,7 +51,7 @@
       }
 
       & input[type='text']:focus {
-        outline: none;
+        outline: double $brand-secondary;
       }
 
       & input[type='text']::placeholder {

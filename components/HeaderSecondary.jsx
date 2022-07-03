@@ -2,7 +2,7 @@ export default function HeaderSecondary() {
   return (
     <section className="header-secondary">
       <div className="header-secondary-inner container">
-        <section className="header-connect mt-5 d-none d-lg-block">
+        <section className="header-connect mt-lg-5 d-none d-lg-block">
           <ul>
             <li>
               <a
@@ -56,7 +56,7 @@ export default function HeaderSecondary() {
           </ul>
         </section>
 
-        <section className="header-controls mt-5">
+        <section className="header-controls mt-lg-5">
           <header className="d-block d-lg-none">
             <h1 className="header-title">Monochrome</h1>
           </header>

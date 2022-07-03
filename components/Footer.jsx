@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-inner container">
-        <section className="footer-connect my-5">
+      <div className="footer-inner mt-5 container">
+        <section className="footer-connect my-4 my-lg-5">
           <div className="footer-connect-inner">
             <form className="footer-newsletter">
               <header className="footer-newsletter-header d-block d-lg-none">
@@ -107,13 +107,13 @@ export default function Footer() {
           </div>
         </section>
 
-        <section className="footer-nav">
+        <section className="footer-nav my-4 my-lg-5">
           <div className="footer-nav-inner">
             <header className="footer-nav-header d-block d-lg-none">
               <h1> How can we help?</h1>
             </header>
 
-            <div className="nav my-5">
+            <div className="nav">
               <nav>
                 <ul>
                   <li>
@@ -217,7 +217,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <section className="footer-contact my-5 d-none d-lg-block">
+            <section className="footer-contact d-none d-lg-block">
               <ul>
                 <li>
                   <a href="tel:+4401023456789" title="Call us">

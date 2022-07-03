@@ -1,8 +1,8 @@
 .footer {
   background: linear-gradient(
     to bottom,
-    $brand-secondary 55%,
-    $brand-primary 45%
+    $brand-secondary 60%,
+    $brand-primary 40%
   );
 
   @include media-breakpoint-up('lg') {

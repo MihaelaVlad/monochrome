@@ -3,7 +3,7 @@ import ProductTile from '../catalog/ProductTile';
 export default function CatalogPreview() {
   return (
     <>
-      <section className="catalog-preview my-5 container">
+      <section className="catalog-preview my-3 my-lg-4 container">
         <div className="catalog-preview-inner">
           <header className="catalog-preview-header">
             <h1>New Stuff</h1>

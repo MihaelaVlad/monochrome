@@ -1,6 +1,6 @@
 export default function BrandMarketing() {
   return (
-    <section className="brand-marketing mb-3 container">
+    <section className="brand-marketing my-3 my-lg-4 container">
       <aside>
         <img
           src="/images/image-marketing.png"
