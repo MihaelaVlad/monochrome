@@ -1,0 +1,22 @@
+.whish-button {
+  background-color: $transparent;
+  border: 1px solid $brand-tertiary;
+  padding: 0 12px 0 0;
+  color: $brand-primary;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $brand-tertiary;
+    color: $brand-primary;
+  }
+
+  i {
+    padding: 12px;
+    margin-right: 13px;
+    font-size: 18px;
+    color: $brand-primary;
+    background-color: $brand-tertiary;
+  }
+}

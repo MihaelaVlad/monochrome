@@ -1,8 +1,10 @@
+import Link from 'next/link';
+
 export default function HeaderSecondary() {
   return (
     <section className="header-secondary">
       <div className="header-secondary-inner container">
-        <section className="header-connect mt-lg-5 d-none d-lg-block">
+        <section className="header-connect d-none d-lg-block">
           <ul>
             <li>
               <a
@@ -56,7 +58,7 @@ export default function HeaderSecondary() {
           </ul>
         </section>
 
-        <section className="header-controls mt-lg-5">
+        <section className="header-controls">
           <header className="d-block d-lg-none">
             <h1 className="header-title">Monochrome</h1>
           </header>
@@ -77,30 +79,27 @@ export default function HeaderSecondary() {
 
           <ul className="user-controls">
             <li>
-              <a
-                href="https://monochrome-mihaela-vlad.netlify.app/"
-                title="User account"
-              >
-                <i className="fa-solid fa-user"></i>
-              </a>
+              <Link href="/" title="User account">
+                <a title="User account">
+                  <i className="fa-solid fa-user"></i>
+                </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="https://monochrome-mihaela-vlad.netlify.app/"
-                title="Wishlist"
-              >
-                <i className="fa-solid fa-heart"></i>
-              </a>
+              <Link href="/" title="Wishlist">
+                <a title="Whishlist">
+                  <i className="fa-solid fa-heart"></i>
+                </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="https://monochrome-mihaela-vlad.netlify.app/"
-                title="Shopping bag"
-              >
-                <i className="fa-solid fa-bag-shopping"></i>
-              </a>
+              <Link href="/">
+                <a title="Shopping bag">
+                  <i className="fa-solid fa-bag-shopping"></i>
+                </a>
+              </Link>
             </li>
           </ul>
         </section>

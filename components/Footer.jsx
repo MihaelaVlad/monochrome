@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -31,13 +33,14 @@ export default function Footer() {
                   title="I agree with Privacy Policy and i want to receive emails from Monochrome"
                 >
                   I agree with
-                  <a
-                    href="https://monochrome-mihaela-vlad.netlify.app/"
-                    title="Privacy Policy"
-                    className="text-decoration-underline mx-1"
-                  >
-                    Privacy Policy
-                  </a>
+                  <Link href="/">
+                    <a
+                      title="Privacy Policy"
+                      className="text-decoration-underline mx-1"
+                    >
+                      Privacy Policy
+                    </a>
+                  </Link>
                   and i want to receive emails from Monochrome
                 </label>
               </div>
@@ -117,39 +120,27 @@ export default function Footer() {
               <nav>
                 <ul>
                   <li>
-                    <a
-                      href="https://monochrome-mihaela-vlad.netlify.app/"
-                      title="About us"
-                    >
-                      About us
-                    </a>
+                    <Link href="/">
+                      <a title="About us">About us</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="https://monochrome-mihaela-vlad.netlify.app/"
-                      title="Careers"
-                    >
-                      Careers
-                    </a>
+                    <Link href="/">
+                      <a title="Careers">Careers</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="https://monochrome-mihaela-vlad.netlify.app/"
-                      title="Affiliates"
-                    >
-                      Affiliates
-                    </a>
+                    <Link href="/">
+                      <a title="Affiliates">Affiliates</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="https://monochrome-mihaela-vlad.netlify.app/"
-                      title="Advertising"
-                    >
-                      Advertising
-                    </a>
+                    <Link href="/">
+                      <a title="Advertising">Advertising</a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -157,39 +148,31 @@ export default function Footer() {
               <nav>
                 <ul>
                   <li>
-                    <a
-                      href="https://monochrome-mihaela-vlad.netlify.app/"
-                      title="Style &amp; fit advice"
-                    >
-                      Style &amp; fit advice
-                    </a>
+                    <Link href="/">
+                      <a title="Style &amp; fit advice">
+                        Style &amp; fit advice
+                      </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="https://monochrome-mihaela-vlad.netlify.app/"
-                      title="Faqs"
-                    >
-                      Faqs
-                    </a>
+                    <Link href="/">
+                      <a title="Faqs">Faqs</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="https://monochrome-mihaela-vlad.netlify.app/"
-                      title="Delivery"
-                    >
-                      Delivery
-                    </a>
+                    <Link href="/">
+                      <a title="Delivery">Delivery</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="https://monochrome-mihaela-vlad.netlify.app/"
-                      title="Exchanges &amp; returns"
-                    >
-                      Exchanges &amp; returns
-                    </a>
+                    <Link href="/">
+                      <a title="Exchanges &amp; returns">
+                        Exchanges &amp; returns
+                      </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -198,21 +181,15 @@ export default function Footer() {
             <div className="terms d-block d-lg-none">
               <ul>
                 <li>
-                  <a
-                    href="https://monochrome-mihaela-vlad.netlify.app/"
-                    title="terms &amp; conditions"
-                  >
-                    terms &amp; conditions
-                  </a>
+                  <Link href="/">
+                    <a title="terms &amp; conditions">terms &amp; conditions</a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="https://monochrome-mihaela-vlad.netlify.app/"
-                    title="privacy &amp; cookies"
-                  >
-                    privacy &amp; cookies
-                  </a>
+                  <Link href="/">
+                    <a title="privacy &amp; cookies">privacy &amp; cookies</a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -220,19 +197,23 @@ export default function Footer() {
             <section className="footer-contact d-none d-lg-block">
               <ul>
                 <li>
-                  <a href="tel:+4401023456789" title="Call us">
-                    Call us
-                    <span>+44 (0)10 2345 6789</span>
-                  </a>
+                  <Link href="/">
+                    <a href="tel:+4401023456789" title="Call us">
+                      Call us
+                      <span>+44 (0)10 2345 6789</span>
+                    </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="mailto:office@monochrome.com"
-                    title="Email customer care"
-                  >
-                    Email customer care
-                  </a>
+                  <Link href="/">
+                    <a
+                      href="mailto:office@monochrome.com"
+                      title="Email customer care"
+                    >
+                      Email customer care
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </section>

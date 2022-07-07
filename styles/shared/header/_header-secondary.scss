@@ -3,12 +3,11 @@
   padding: 16px 0;
 
   @include media-breakpoint-up('lg') {
-    background: url('./../../../public/images/banner.png') no-repeat center
-      center / cover;
+    background: url('/images/banner.png') no-repeat center center / cover;
     padding-bottom: 450px;
   }
 
-  .header-secondary-inner {
+  &-inner {
     @include media-breakpoint-up('lg') {
       display: grid;
       grid-template-columns: 1fr 1fr;

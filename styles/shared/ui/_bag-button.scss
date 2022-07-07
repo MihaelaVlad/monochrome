@@ -1,0 +1,22 @@
+.bag-button {
+  background-color: $brand-primary;
+  border: 1px solid $brand-primary;
+  padding: 0 12px 0 0;
+  color: $white;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $white;
+    color: $brand-primary;
+  }
+
+  i {
+    padding: 12px;
+    margin-right: 8px;
+    font-size: 18px;
+    color: $brand-primary;
+    background-color: $white;
+  }
+}

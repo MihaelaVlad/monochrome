@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function HeaderPrimary() {
   return (
     <section className="header-primary">
@@ -5,12 +7,11 @@ export default function HeaderPrimary() {
         <div className="header-search d-block d-lg-none container">
           <ul>
             <li>
-              <a
-                href="https://monochrome-mihaela-vlad.netlify.app/"
-                title="Menu"
-              >
-                <i className="fa-solid fa-bars"></i>
-              </a>
+              <Link href="/">
+                <a title="Menu">
+                  <i className="fa-solid fa-bars"></i>
+                </a>
+              </Link>
             </li>
 
             <li>
@@ -34,57 +35,39 @@ export default function HeaderPrimary() {
         <nav className="header-nav d-none d-lg-block container">
           <ul>
             <li>
-              <a
-                href="https://monochrome-mihaela-vlad.netlify.app/"
-                title="New arrivals"
-              >
-                New arrivals
-              </a>
+              <Link href="/">
+                <a title="New arrivals">New arrivals</a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="https://monochrome-mihaela-vlad.netlify.app/"
-                title="Brands"
-              >
-                Brands
-              </a>
+              <Link href="/">
+                <a title="Brands">Brands</a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="https://monochrome-mihaela-vlad.netlify.app/"
-                title="Men's"
-              >
-                Men&apos;s
-              </a>
+              <Link href="/catalog">
+                <a title="Men's">Men&apos;s</a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="https://monochrome-mihaela-vlad.netlify.app/"
-                title="Women's"
-              >
-                Women&apos;s
-              </a>
+              <Link href="/">
+                <a title="Women's">Women&apos;s</a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="https://monochrome-mihaela-vlad.netlify.app/"
-                title="Accessories"
-              >
-                Accessories
-              </a>
+              <Link href="/">
+                <a title="Accessories">Accessories</a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="https://monochrome-mihaela-vlad.netlify.app/"
-                title="Lookbook"
-              >
-                Lookbook
-              </a>
+              <Link href="/">
+                <a title="Lookbook">Lookbook</a>
+              </Link>
             </li>
           </ul>
         </nav>
