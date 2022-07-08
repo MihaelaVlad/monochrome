@@ -148,7 +148,7 @@ export default function Footer() {
               <nav>
                 <ul>
                   <li>
-                    <Link href="/">
+                    <Link href="/style">
                       <a title="Style &amp; fit advice">
                         Style &amp; fit advice
                       </a>

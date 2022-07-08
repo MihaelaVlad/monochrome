@@ -22,7 +22,7 @@ export default function ProductTile() {
 
         <div>
           <h1 className="product-tile-title">
-            <Link href="/">
+            <Link href="/product">
               <a title="Monochrome">Monochrome</a>
             </Link>
           </h1>
