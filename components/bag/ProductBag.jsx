@@ -29,7 +29,12 @@ export default function ProductBag() {
 
       <section className="product-qty">
         <form>
-          <button type="button" className="button-small">
+          <button
+            type="button"
+            className="button-small"
+            name="substract-qty"
+            id="substract-qty"
+          >
             <i className="fa-solid fa-minus"></i>
           </button>
 
@@ -42,7 +47,12 @@ export default function ProductBag() {
             defaultValue="1"
           ></input>
 
-          <button type="button" className="button-small">
+          <button
+            type="button"
+            className="button-small"
+            name="add-qty"
+            id="add-qty"
+          >
             <i className="fa-solid fa-plus"></i>
           </button>
         </form>
