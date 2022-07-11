@@ -95,7 +95,7 @@ export default function HeaderSecondary() {
             </li>
 
             <li>
-              <Link href="/">
+              <Link href="/shopping-bag">
                 <a title="Shopping bag">
                   <i className="fa-solid fa-bag-shopping"></i>
                 </a>
