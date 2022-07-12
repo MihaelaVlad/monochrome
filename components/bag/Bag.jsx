@@ -12,7 +12,7 @@ export default function Bag() {
         </span>
       </header>
 
-      <section className="bag-products mx-lg-5">
+      <section className="bag-products">
         <ul className="bag-products-details">
           <li>Item</li>
           <li>Description</li>
@@ -21,7 +21,7 @@ export default function Bag() {
           <li>Unity price</li>
         </ul>
 
-        <section>
+        <section className="bag-products-order">
           <ProductBag></ProductBag>
 
           <ProductBag></ProductBag>
@@ -30,12 +30,12 @@ export default function Bag() {
         </section>
       </section>
 
-      <section className="bag-footer mt-4 mx-lg-5">
+      <section className="bag-footer my-5 mx-lg-5">
         <section className="bag-totals">
           <section className="subtotal">
             <h1>Subtotal</h1>
 
-            <span>$425</span>
+            <span>$1.275</span>
           </section>
 
           <section className="shipping">

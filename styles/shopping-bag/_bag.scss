@@ -3,6 +3,7 @@
   row-gap: 24px;
   justify-items: center;
   align-items: center;
+  border-bottom: 1px solid $brand-tertiary;
 
   &-header {
     display: grid;
@@ -36,9 +37,8 @@
 
   &-products {
     display: grid;
-    row-gap: 24px;
     align-items: center;
-    border-bottom: 1px solid $brand-tertiary;
+    width: 100%;
 
     &-details {
       display: none;
@@ -57,6 +57,11 @@
           font-size: 18px;
         }
       }
+    }
+
+    .bag-products-container {
+      display: grid;
+      row-gap: 24px;
     }
   }
 
@@ -87,14 +92,17 @@
       h1 {
         font-size: 18px;
         text-transform: lowercase;
+        justify-self: end;
 
         @include media-breakpoint-up('lg') {
           font-size: 24px;
+          justify-self: start;
         }
       }
 
       span {
         font-size: 16px;
+        justify-self: start;
 
         @include media-breakpoint-up('lg') {
           font-size: 20px;
