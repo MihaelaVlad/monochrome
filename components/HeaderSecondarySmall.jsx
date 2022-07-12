@@ -85,7 +85,12 @@ export default function HeaderSecondarySmall() {
                 required
               ></input>
 
-              <button type="submit" name="search" id="search" title="Search">
+              <button
+                type="submit"
+                name="search-btn"
+                id="search-btn"
+                title="Search"
+              >
                 <i className="fa-solid fa-magnifying-glass"></i>
               </button>
             </form>

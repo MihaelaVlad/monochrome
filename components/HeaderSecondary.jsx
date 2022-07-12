@@ -66,13 +66,18 @@ export default function HeaderSecondary() {
           <form className="header-search d-none d-lg-block">
             <input
               type="text"
-              name="search"
-              id="search"
+              name="search-home"
+              id="search-home"
               placeholder="Search"
               required
             ></input>
 
-            <button type="submit" name="search" id="search" title="Search">
+            <button
+              type="submit"
+              name="btn-search-home"
+              id="btn-search-home"
+              title="Search"
+            >
               <i className="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>

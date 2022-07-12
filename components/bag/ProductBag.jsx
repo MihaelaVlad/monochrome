@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function ProductBag() {
   return (
     <article className="product-bag pt-3">
-      <div className="product-bag-container  mx-lg-5">
+      <div className="product-bag-container mx-lg-5">
         <section className="product-image">
           <Link href="/product">
             <a>

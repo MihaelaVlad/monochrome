@@ -1,4 +1,5 @@
 import ProductBag from './ProductBag';
+import Link from 'next/link';
 
 export default function Bag() {
   return (
@@ -13,13 +14,15 @@ export default function Bag() {
       </header>
 
       <section className="bag-products">
-        <ul className="bag-products-details">
-          <li>Item</li>
-          <li>Description</li>
-          <li>Color</li>
-          <li>Quantity</li>
-          <li>Unity price</li>
-        </ul>
+        <section className="details">
+          <ul className="bag-products-details mx-lg-5">
+            <li>Item</li>
+            <li>Description</li>
+            <li>Color</li>
+            <li>Quantity</li>
+            <li>Unity price</li>
+          </ul>
+        </section>
 
         <section className="bag-products-order">
           <ProductBag></ProductBag>
@@ -57,16 +60,12 @@ export default function Bag() {
           </section>
         </section>
 
-        <button
-          type="submit"
-          name="buy"
-          id="buy"
-          className="bag-button"
-          title="By now"
-        >
-          <i className="fa-solid fa-wallet"></i>
-          By now
-        </button>
+        <Link href="/sign-in-payment">
+          <a title="Buy now" className="bag-button">
+            <i className="fa-solid fa-wallet"></i>
+            Buy bow
+          </a>
+        </Link>
       </section>
     </section>
   );

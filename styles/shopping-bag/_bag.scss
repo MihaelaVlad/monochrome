@@ -40,6 +40,11 @@
     align-items: center;
     width: 100%;
 
+    .details {
+      border-top: 1px solid $brand-tertiary;
+      border-bottom: 1px solid $brand-tertiary;
+    }
+
     &-details {
       display: none;
 
@@ -48,8 +53,7 @@
         grid-template-columns: repeat(5, 1fr);
         align-items: center;
         justify-items: center;
-        border-top: 1px solid $brand-tertiary;
-        border-bottom: 1px solid $brand-tertiary;
+
         padding: 16px 0;
 
         li {

@@ -10,10 +10,6 @@
       font-size: 18px;
     }
 
-    li:first-child {
-      font-weight: bold;
-    }
-
     @include media-breakpoint-up('lg') {
       align-content: center;
       grid-auto-flow: column;
