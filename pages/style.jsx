@@ -7,7 +7,7 @@ export default function Style() {
   return (
     <div>
       <Head>
-        <title>Monochrome</title>
+        <title>Style &amp; fit</title>
       </Head>
 
       <HeaderSmall></HeaderSmall>

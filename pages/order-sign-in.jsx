@@ -1,25 +1,22 @@
 import Head from 'next/head';
-import Bag from '../components/bag/Bag';
 import Footer from '../components/Footer';
 import HeaderSmall from '../components/HeaderSmall';
+import SignInOrder from '../components/payment/SignInOrder';
 import Help from '../components/Help';
-import CatalogView from '../components/catalog/CatalogView';
 
-export default function ShoppingBag() {
+export default function OrderSignIn() {
   return (
     <div>
       <Head>
-        <title>Shopping Bag</title>
+        <title>Sign in</title>
       </Head>
 
       <HeaderSmall></HeaderSmall>
 
       <main className="content">
-        <Bag></Bag>
+        <SignInOrder></SignInOrder>
 
         <Help></Help>
-
-        <CatalogView></CatalogView>
       </main>
 
       <Footer></Footer>

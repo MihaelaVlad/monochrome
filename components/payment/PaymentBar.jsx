@@ -5,7 +5,7 @@ export default function PaymentBar() {
     <section className="payment-bar">
       <ul className="payment-bar-progress">
         <li>
-          <Link href="/sign-in-payment">
+          <Link href="/order-sign-in">
             <a title="Sign in">
               Sign in
               <span className="step first-step step-active"></span>

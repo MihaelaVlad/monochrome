@@ -1,10 +1,10 @@
 import PaymentBar from './PaymentBar';
 import Link from 'next/link';
 
-export default function SignInPay() {
+export default function SignInOrder() {
   return (
-    <section className="sign-in-pay container mt-4 mt-lg-5 pb-5">
-      <header className="sign-in-pay-header">
+    <section className="sign-in-order container mt-4 mt-lg-5 pb-5">
+      <header className="sign-in-order-header">
         <h1>Sign in</h1>
       </header>
 
@@ -44,7 +44,7 @@ export default function SignInPay() {
                   required
                 ></input>
 
-                <Link href="/sign-in-payment">
+                <Link href="/sign-in-order">
                   <a title="Forgot password?">Forgot password?</a>
                 </Link>
 
@@ -115,7 +115,7 @@ export default function SignInPay() {
 
                   <label htmlFor="register-terms">
                     I agree with
-                    <Link href="/sign-in-payment">
+                    <Link href="/sign-in-order">
                       <a
                         title="Terms and Conditions"
                         className="d-inlineblock mx-1"
@@ -124,7 +124,7 @@ export default function SignInPay() {
                       </a>
                     </Link>
                     and
-                    <Link href="/sign-in-payment">
+                    <Link href="/sign-in-order">
                       <a
                         title="GDPR Privacy Policy"
                         className="d-inlineblock mx-1"
