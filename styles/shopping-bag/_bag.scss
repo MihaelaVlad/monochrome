@@ -41,8 +41,11 @@
     width: 100%;
 
     .details {
-      border-top: 1px solid $brand-tertiary;
       border-bottom: 1px solid $brand-tertiary;
+
+      @include media-breakpoint-up('lg') {
+        border-top: 1px solid $brand-tertiary;
+      }
     }
 
     &-details {

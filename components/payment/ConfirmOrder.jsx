@@ -31,9 +31,11 @@ export default function ConfirmOrder() {
             <ProductsOrderPreview></ProductsOrderPreview>
           </div>
 
-          <Link href="/">
-            <a title="Print your invoice">Print your invoice</a>
-          </Link>
+          <div>
+            <Link href="/">
+              <a title="Print your invoice">Print your invoice</a>
+            </Link>
+          </div>
         </section>
 
         <div className="payment-shipping">

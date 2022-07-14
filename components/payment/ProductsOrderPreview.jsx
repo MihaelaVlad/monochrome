@@ -4,7 +4,7 @@ export default function ProductsOrderPreview() {
   return (
     <section className="products-order-preview">
       <section className="products-order-details">
-        <ul>
+        <ul className="mx-lg-5">
           <li>Item</li>
           <li>Quantity</li>
           <li>Unit price</li>
@@ -19,7 +19,7 @@ export default function ProductsOrderPreview() {
 
       <ProductOrder></ProductOrder>
 
-      <footer className="products-order-total">
+      <footer className="products-order-total py-3 mx-lg-5">
         <h1>Total</h1>
 
         <span>$1.275$</span>

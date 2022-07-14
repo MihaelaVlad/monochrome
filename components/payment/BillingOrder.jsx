@@ -35,18 +35,18 @@ export default function BillingOrder() {
                 <h2>Shipping address</h2>
               </header>
 
-              <section className="address details">
+              <section className="shipping-address-details">
                 <span>Mr. Kill Bill</span>
                 <span>1234</span>
                 <span>Couckoo Boulevard</span>
                 <span>Quarantine Zone</span>
                 <span>47862</span>
                 <span>Happy Country</span>
-              </section>
 
-              <Link href="/billing">
-                <a title="Change shipping address">Change shipping address</a>
-              </Link>
+                <Link href="/billing">
+                  <a title="Change shipping address">Change shipping address</a>
+                </Link>
+              </section>
             </section>
 
             <section className="billing-address">
@@ -56,11 +56,11 @@ export default function BillingOrder() {
 
               <section className="billing-address-details">
                 <span>Same as shipping address</span>
-              </section>
 
-              <Link href="/billing">
-                <a title="Change billing address">Change billing address</a>
-              </Link>
+                <Link href="/billing">
+                  <a title="Change billing address">Change billing address</a>
+                </Link>
+              </section>
             </section>
           </div>
         </section>
@@ -78,11 +78,11 @@ export default function BillingOrder() {
 
               <section className="espress-delivery-details">
                 <span>Delivered in 3-4 business days</span>
-              </section>
 
-              <Link href="/billing">
-                <a title="Change shipping address">Change shipping address</a>
-              </Link>
+                <Link href="/billing">
+                  <a title="Change shipping address">Change shipping address</a>
+                </Link>
+              </section>
             </section>
 
             <section className="packaging">
@@ -92,11 +92,11 @@ export default function BillingOrder() {
 
               <section className="packaging-details">
                 <span>Same as shipping address</span>
-              </section>
 
-              <Link href="/billing">
-                <a title="Change billing address">Change billing address</a>
-              </Link>
+                <Link href="/billing">
+                  <a title="Change billing address">Change billing address</a>
+                </Link>
+              </section>
             </section>
           </div>
         </section>
@@ -110,27 +110,33 @@ export default function BillingOrder() {
             <form>
               <fieldset>
                 <div className="pay-methods">
-                  <input
-                    type="radio"
-                    name="methods"
-                    id="card"
-                    value="card"
-                    required
-                  ></input>
-                  <label htmlFor="card">
-                    <i className="fa-solid fa-credit-card"></i>
-                  </label>
+                  <div>
+                    <input
+                      type="radio"
+                      name="methods"
+                      id="card"
+                      value="card"
+                      className="me-2"
+                      required
+                    ></input>
+                    <label htmlFor="card">
+                      <i className="fa-solid fa-credit-card"></i>
+                    </label>
+                  </div>
 
-                  <input
-                    type="radio"
-                    name="methods"
-                    id="paypal"
-                    value="paypal"
-                    required
-                  ></input>
-                  <label htmlFor="paypal">
-                    <i className="fa-brands fa-paypal"></i>
-                  </label>
+                  <div>
+                    <input
+                      type="radio"
+                      name="methods"
+                      id="paypal"
+                      value="paypal"
+                      className="me-2"
+                      required
+                    ></input>
+                    <label htmlFor="paypal">
+                      <i className="fa-brands fa-paypal"></i>
+                    </label>
+                  </div>
                 </div>
 
                 <label htmlFor="card-name">*Name on card:</label>
@@ -139,6 +145,7 @@ export default function BillingOrder() {
                   name="card-name"
                   id="card-name"
                   placeholder="Name on card"
+                  className="input"
                   required
                 ></input>
 
@@ -148,61 +155,72 @@ export default function BillingOrder() {
                   name="card-number"
                   id="card-number"
                   placeholder="Card Number"
+                  className="input"
                   required
                 ></input>
 
-                <label>*Expiration date:</label>
-                <select
-                  name="card-expiration-month"
-                  id="card-expiration-month"
-                  required
-                >
-                  <option value="january">January</option>
-                  <option value="february">February</option>
-                  <option value="march">March</option>
-                  <option value="april">April</option>
-                  <option value="may">May</option>
-                  <option value="june">June</option>
-                  <option value="july">July</option>
-                  <option value="august">August</option>
-                  <option value="september">September</option>
-                  <option value="october">October</option>
-                  <option value="november">November</option>
-                  <option value="december">December</option>
-                </select>
+                <div className="card-info">
+                  <label className="d-block">*Expiration date:</label>
 
-                <select
-                  name="card-expiration-year"
-                  id="card-expiration-year"
-                  required
-                >
-                  <option value="2022">2022</option>
-                  <option value="2023">2023</option>
-                  <option value="2024">2024</option>
-                  <option value="2025">2025</option>
-                  <option value="2026">2026</option>
-                  <option value="2027">2027</option>
-                  <option value="2028">2028</option>
-                </select>
+                  <div className="card-info-container">
+                    <select
+                      name="card-expiration-month"
+                      id="card-expiration-month"
+                      className="me-lg-2"
+                      required
+                    >
+                      <option value="january">January</option>
+                      <option value="february">February</option>
+                      <option value="march">March</option>
+                      <option value="april">April</option>
+                      <option value="may">May</option>
+                      <option value="june">June</option>
+                      <option value="july">July</option>
+                      <option value="august">August</option>
+                      <option value="september">September</option>
+                      <option value="october">October</option>
+                      <option value="november">November</option>
+                      <option value="december">December</option>
+                    </select>
 
-                <input
-                  type="text"
-                  name="card-cvv"
-                  id="card-cvv"
-                  placeholder="CVV"
-                  required
-                ></input>
+                    <select
+                      name="card-expiration-year"
+                      id="card-expiration-year"
+                      className="me-lg-2"
+                      required
+                    >
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                    </select>
 
-                <input
-                  type="checkbox"
-                  name="store-payment"
-                  id="store-payment"
-                ></input>
-                <label htmlFor="store-payment">
-                  Securely store payment for next purchase.
-                </label>
+                    <input
+                      type="text"
+                      name="card-cvv"
+                      id="card-cvv"
+                      placeholder="CVV"
+                      className="input"
+                      required
+                    ></input>
+                  </div>
+                </div>
 
-                <div>
+                <div className="secure-pay py-3">
+                  <input
+                    type="checkbox"
+                    name="store-payment"
+                    id="store-payment"
+                  ></input>
+                  <label htmlFor="store-payment">
+                    Securely store payment for next purchase.
+                  </label>
+                </div>
+
+                <div className="order-place py-3">
                   <button
                     type="submit"
                     name="place-order"
