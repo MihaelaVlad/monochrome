@@ -166,7 +166,7 @@ export default function BillingOrder() {
                     <select
                       name="card-expiration-month"
                       id="card-expiration-month"
-                      className="me-lg-2"
+                      className="me-lg-2 select-month"
                       required
                     >
                       <option value="january">January</option>
@@ -186,7 +186,7 @@ export default function BillingOrder() {
                     <select
                       name="card-expiration-year"
                       id="card-expiration-year"
-                      className="me-lg-2"
+                      className="me-lg-2 select-year"
                       required
                     >
                       <option value="2022">2022</option>

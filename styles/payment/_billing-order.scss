@@ -133,6 +133,14 @@
           }
         }
 
+        .select-month,
+        .select-year {
+          font-family: 'Roboto', sans-serif;
+          color: $brand-primary;
+          font-size: 14px;
+          font-weight: 300;
+        }
+
         input[type='radio'],
         input[type='checkbox'] {
           filter: grayscale(100%) brightness(100%);

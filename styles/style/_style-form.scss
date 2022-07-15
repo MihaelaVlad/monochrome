@@ -116,7 +116,7 @@
         &::placeholder {
           font-family: 'Roboto', sans-serif;
           color: $brand-tertiary;
-          font-size: 12px;
+          font-size: 14px;
           font-style: italic;
           font-weight: 300;
         }
@@ -132,6 +132,10 @@
         height: 34px;
         background-color: $white;
         border: 1px solid $brand-primary;
+        font-family: 'Roboto', sans-serif;
+        color: $brand-primary;
+        font-size: 14px;
+        font-weight: 300;
 
         @include media-breakpoint-up('md') {
           width: 200px;

@@ -91,6 +91,7 @@
           display: grid;
           grid-template-columns: 1fr 0.5fr;
           align-content: center;
+          column-gap: 10px;
           justify-self: end;
         }
 
@@ -106,7 +107,7 @@
           align-content: center;
           justify-self: flex-end;
           justify-items: end;
-          grid-gap: 24px;
+          column-gap: 24px;
 
           @include media-breakpoint-up('lg') {
             grid-template-columns: repeat(3, 30px);

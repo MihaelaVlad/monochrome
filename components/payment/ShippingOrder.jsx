@@ -1,4 +1,5 @@
 import PaymentBar from './PaymentBar';
+import Link from 'next/link';
 
 export default function ShippingOrder() {
   return (
@@ -54,7 +55,12 @@ export default function ShippingOrder() {
 
                 <div>
                   <label htmlFor="country">Country *</label>
-                  <select name="country" id="country" required>
+                  <select
+                    name="country"
+                    id="country"
+                    className="select-country"
+                    required
+                  >
                     <option value="">--Select your country--</option>
                     <option value="romania">Romania</option>
                     <option value="france">France</option>
@@ -92,7 +98,12 @@ export default function ShippingOrder() {
 
                 <div>
                   <label htmlFor="city">City *</label>
-                  <select name="city" id="city" required>
+                  <select
+                    name="city"
+                    id="city"
+                    className="select-city"
+                    required
+                  >
                     <option value="">--Select your city--</option>
                     <option value="city1">City 1</option>
                     <option value="city2">City 2</option>

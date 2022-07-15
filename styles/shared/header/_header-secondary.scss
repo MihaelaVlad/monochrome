@@ -83,6 +83,7 @@
         grid-template-columns: 1fr 0.5fr;
         align-content: center;
         justify-content: center;
+        column-gap: 10px;
       }
 
       .header-title {
@@ -96,7 +97,7 @@
         grid-template-columns: repeat(3, 0.25fr);
         align-content: center;
         justify-self: flex-end;
-        grid-gap: 24px;
+        column-gap: 24px;
 
         @include media-breakpoint-up('lg') {
           grid-template-columns: repeat(3, 30px);
