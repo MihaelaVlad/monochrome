@@ -24,74 +24,44 @@
         row-gap: 10px;
       }
 
-      .step {
+      li {
+        content: '';
+        width: 25%;
+        height: 1px;
+        background-color: $brand-tertiary;
+        position: absolute;
+        bottom: 21px;
+        z-index: -1;
+      }
+
+      .active::after {
+        content: '';
         height: 10px;
         width: 10px;
         background-color: $brand-primary;
         border-radius: 50%;
-        bottom: 0;
+        text-align: center;
       }
 
-      .step-inactive {
+      a:before {
+        content: '';
+        width: 25%;
+        height: 1px;
+        background-color: $brand-tertiary;
+        position: absolute;
+        bottom: 21px;
+        z-index: -1;
+      }
+
+      a::after {
+        content: '';
         height: 10px;
         width: 10px;
         border: 1px solid $brand-tertiary;
         background-color: $brand-tertiary;
         border-radius: 50%;
-        bottom: 0;
+        text-align: center;
         z-index: 1;
-      }
-
-      .first-step::before {
-        content: '';
-        width: 25%;
-        height: 1px;
-        background-color: $brand-tertiary;
-        position: absolute;
-        bottom: 21px;
-        left: 0;
-        z-index: -1;
-      }
-
-      .first-step::after {
-        content: '';
-        width: 25%;
-        height: 1px;
-        background-color: $brand-tertiary;
-        position: absolute;
-        bottom: 21px;
-        z-index: -1;
-      }
-
-      .second-step::after {
-        content: '';
-        width: 25%;
-        height: 1px;
-        background-color: $brand-tertiary;
-        position: absolute;
-        bottom: 21px;
-        z-index: -1;
-      }
-
-      .third-step::after {
-        content: '';
-        width: 25%;
-        height: 1px;
-        background-color: $brand-tertiary;
-        position: absolute;
-        bottom: 21px;
-        z-index: -1;
-      }
-
-      .fourth-step::after {
-        content: '';
-        width: 25%;
-        height: 1px;
-        background-color: $brand-tertiary;
-        position: absolute;
-        right: 0;
-        bottom: 21px;
-        z-index: -1;
       }
     }
   }
