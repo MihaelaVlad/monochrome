@@ -8,10 +8,12 @@
   color: $white;
   border: $brand-primary;
   letter-spacing: 0.7px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border 0.2s ease-in-out;
 
   &:hover {
     background-color: $white;
+    border: $brand-primary;
     color: $brand-primary;
   }
 }

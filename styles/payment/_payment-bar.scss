@@ -10,7 +10,7 @@
     border-top: 1px solid $brand-tertiary;
 
     li {
-      font-size: 18px;
+      font-size: 14px;
       text-transform: lowercase;
 
       @include media-breakpoint-up('lg') {
@@ -43,7 +43,7 @@
         text-align: center;
       }
 
-      a:before {
+      a::before {
         content: '';
         width: 25%;
         height: 1px;

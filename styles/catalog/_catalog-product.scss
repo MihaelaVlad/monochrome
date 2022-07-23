@@ -172,8 +172,8 @@
       .product-details-connect {
         ul {
           display: grid;
-          grid-template-columns: repeat(5, 0.2fr);
-          align-content: center;
+          grid-template-columns: repeat(5, 1fr);
+          align-items: center;
           justify-items: center;
           grid-gap: 24px;
         }
@@ -191,10 +191,9 @@
         width: 100%;
         ul {
           display: grid;
-          grid-template-columns: repeat(3, 0.33fr);
-          align-content: center;
-          justify-self: flex-end;
-          justify-items: end;
+          grid-template-columns: repeat(3, 1fr);
+          align-items: start;
+          justify-items: center;
           grid-gap: 24px;
           border-top: 1px solid $brand-tertiary;
         }

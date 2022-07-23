@@ -115,6 +115,7 @@
 
       li {
         font-size: 22px;
+        text-align: center;
       }
     }
   }
@@ -189,11 +190,16 @@
         }
       }
 
+      li {
+        text-align: center;
+      }
+
       .terms {
         text-decoration: underline;
         font-weight: 300;
         font-size: 14px;
         font-style: italic;
+        width: 100%;
       }
 
       &-contact {

@@ -6,6 +6,7 @@
   border: 1px solid $brand-primary;
   background-color: $transparent;
   cursor: pointer;
+  width: auto;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
   &-small {

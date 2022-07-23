@@ -63,7 +63,7 @@ export default function Bag() {
         <Link href="/order-sign-in">
           <a title="Buy now" className="bag-button">
             <i className="fa-solid fa-wallet"></i>
-            Buy bow
+            Buy Now
           </a>
         </Link>
       </section>

@@ -1,20 +1,26 @@
 .help {
   ul {
     display: grid;
-    align-content: center;
+    align-items: center;
     justify-items: center;
     row-gap: 10px;
+    width: 100%;
 
     li {
       text-transform: lowercase;
-      font-size: 18px;
+      font-size: 16px;
+      text-align: center;
+
+      @include media-breakpoint-up('lg') {
+        font-size: 18px;
+      }
     }
 
     @include media-breakpoint-up('lg') {
-      align-content: center;
+      align-items: center;
       grid-auto-flow: column;
       justify-content: space-between;
-      padding: 0 80px;
+      padding: 0 40px;
     }
   }
 }
