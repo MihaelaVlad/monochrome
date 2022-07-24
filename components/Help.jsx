@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Help() {
   return (
-    <section className="help container py-5">
+    <section className="help-customer container py-5">
       <ul>
         <li>
           <span>Need help?</span>
