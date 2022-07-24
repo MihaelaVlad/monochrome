@@ -189,9 +189,10 @@
 
       .help {
         width: 100%;
+
         ul {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(3, 33.33%);
           align-items: start;
           justify-items: center;
           grid-gap: 24px;
