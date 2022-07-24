@@ -13,7 +13,7 @@ export default function SignInOrder() {
       </section>
 
       <section className="account">
-        <div className="account-inner mx-5 pb-5">
+        <div className="account-inner mx-lg-5 pb-5">
           <section className="sign-in py-5">
             <header className="sign-in-header px-5">
               <h1 className="pb-3">Existing customer</h1>

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner mt-5 container">
-        <section className="footer-connect my-4 my-lg-5">
+        <section className="footer-connect my-5 py-5 py-lg-1">
           <div className="footer-connect-inner">
             <form className="footer-newsletter">
               <header className="footer-newsletter-header d-block d-lg-none">
@@ -110,7 +110,7 @@ export default function Footer() {
           </div>
         </section>
 
-        <section className="footer-nav my-4 my-lg-5">
+        <section className="footer-nav my-5 py-5 py-lg-1">
           <div className="footer-nav-inner">
             <header className="footer-nav-header d-block d-lg-none">
               <h1> How can we help?</h1>

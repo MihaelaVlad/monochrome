@@ -4,6 +4,7 @@
   padding: 0 12px 0 0;
   height: auto;
   width: auto;
+  white-space: nowrap;
   color: $white;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -17,6 +18,7 @@
   i {
     padding: 12px 6px;
     margin-right: 8px;
+    height: 100%;
     font-size: 18px;
     color: $brand-primary;
     background-color: $white;

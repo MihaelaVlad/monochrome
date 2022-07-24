@@ -1,8 +1,8 @@
 .footer {
   background: linear-gradient(
     to bottom,
-    $brand-secondary 60%,
-    $brand-primary 40%
+    $brand-secondary 55%,
+    $brand-primary 45%
   );
 
   @include media-breakpoint-up('lg') {
@@ -95,7 +95,8 @@
     .terms {
       display: grid;
       grid-template-columns: 0.1fr 1fr;
-      justify-items: center;
+      justify-items: start;
+      align-items: center;
       font-size: 12px;
     }
   }
@@ -116,6 +117,7 @@
       li {
         font-size: 22px;
         text-align: center;
+        width: 100%;
       }
     }
   }
@@ -134,7 +136,7 @@
       grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 2fr 0.5fr;
       grid-auto-flow: column;
-      row-gap: 30px;
+      row-gap: 45px;
       align-items: center;
       justify-items: center;
       font-family: 'Roboto', sans-serif;
@@ -153,10 +155,12 @@
         grid-template-columns: 1fr 1fr;
         align-items: center;
         text-transform: lowercase;
+        font-size: 14px;
         text-align: center;
 
         @include media-breakpoint-up('lg') {
           text-align: left;
+          font-size: 16px;
           width: 100%;
         }
 
@@ -192,6 +196,11 @@
 
       li {
         text-align: center;
+        width: 100%;
+
+        @include media-breakpoint-up('lg') {
+          text-align: left;
+        }
       }
 
       .terms {

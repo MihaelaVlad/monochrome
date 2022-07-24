@@ -11,6 +11,8 @@
 
     li {
       font-size: 14px;
+      width: 100%;
+      white-space: nowrap;
       text-transform: lowercase;
 
       @include media-breakpoint-up('lg') {
